@@ -4,40 +4,63 @@
 }
 
 .container{
-    border: 5px solid red;
-    width: 50vw;
-    height: 60vw;
-    margin: 20vw auto;
-    border-radius: 3vw;
-    padding: 5vw;
+    width: 30vh;
+    height: 40vh;
+    margin: 5vw auto;
+    border-radius: 6vh;
+    padding: 20vh;
+    background-color: grey;
+    border: 2px solid black;
+   
 }
 
 .tela_resultado{
-    border: 5px solid yellow;
-    width: 49vw;
-    height: 10vw;
-    border-radius: 3vw;
+    border: 2px solid black;
+    width: 50vh;
+    height: 8vh;
+    border-radius: 3vh;
+    margin: -16vh 0 0vh -11vh;
     background-color: white;
     text-align: center;
 }
 
 .texto_resultado{
-    padding-top: 3.3vw;
-    font-size: 2vw;
+    padding-top: 1vh;
+    font-size: 3vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .numeros{
-    border: 5px solid greenyellow;
-    width: 50vw;
-    height: 50vw;
-    margin: 8vw 1vw 3vw 0.1vw;
+    border-radius: 2vh;
+    width: 55vh;
+    height: 60vh;
+    margin: 8vh 1vh 3vh -2.9vh;
 }
 
-.button{
-    border: 2px solid blue;
+tr button{
+    border-radius: 1vh;
+}
+
+.botao{
+    width: 13vh;
+    height: 11vh;
+    font-size: 6vh;
+}
+
+.botao:hover{
+    background-color: grey;
+}
+
+.igual{
+    height: 24vh;
+    width: 12vh;
+    font-size: 6vh;
+}
+
+.igual:hover{
+    background-color: grey;
 }
 
 body{
-    background-color: black;
+    background: linear-gradient(#4CCD99, #FFF455);
 }
