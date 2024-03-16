@@ -27,12 +27,19 @@ function limpar() {
     document.querySelector('.texto_resultado').innerText = '';
 }
 
-
-function calcular() {
-   
-    let expressao = document.querySelector('.texto_resultado').innerText;
-  
-    let resultado = eval(expressao); 
-    
-    document.querySelector('.texto_resultado').innerText = resultado;
+function apagar(){
+    let texto_Atual = document.querySelector('.texto_resultado').innerText;
+    let novoTexto = texto_Atual.slice(0, -1);
+    document.querySelector('.texto_resultado').innerText = novoTexto;
 }
+
+function calcular(){
+    let texto_resultado = document.querySelector('.texto_resultado').innerText;
+    if(texto_resultado){
+        document.querySelector('.texto_resultado').innerText = eval(texto_resultado);
+    }
+    else{
+        alert("Digite algo para calcular");
+    }
+}
+

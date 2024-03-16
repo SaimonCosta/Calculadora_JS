@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/Icon.png" type="image/png">
 </head>
 <body>
     <div class="container">
         <div class="calculadora">
             <div class="resultado">
-                <p class="texto_resultado">1.000,00</p>
+                <p class="texto_resultado"></p>
             </div>
             <div class="teclado">
                 <table>
                     <tr>
                         <td><button class="botao" onclick="limpar()">C</button></td>
-                        <td><button class="botao"><</button></td>
-                        <td><button class="botao">/</button></td>
-                        <td><button class="botao" onclick="vezes()">X</button></td>
+                        <td><button class="botao" onclick="adicionar('*')">X</button></td>
+                        <td><button class="botao" onclick="adicionar('/')">/</button></td>
+                        <td><button class="botao" onclick="apagar()"><</button></td>
                     </tr>
                     <tr>   
                         <td><button class="botao" onclick="adicionar(7)">7</button></td>
                         <td><button class="botao" onclick="adicionar(8)">8</button></td>
                         <td><button class="botao" onclick="adicionar(9)">9</button></td>
-                        <td><button class="botao">-</button></td>
+                        <td><button class="botao" onclick="adicionar('-')">-</button></td>
                     </tr>
                     <tr>  
                         <td><button class="botao" onclick="adicionar(4)">4</button></td>
                         <td><button class="botao" onclick="adicionar(5)">5</button></td>
                         <td><button class="botao" onclick="adicionar(6)">6</button></td>
-                        <td><button class="botao">+</button></td>
+                        <td><button class="botao" onclick="adicionar('+')">+</button></td>
                     </tr>
                     <tr>    
                         <td><button class="botao" onclick="adicionar(1)">1</button></td>
@@ -41,8 +42,8 @@
                     </tr>
                     <tr>
                         <td colspan="1"><button class="botao" onclick="adicionar(0)">0</button></td>
-                        <td><button class="botao" onclick="adicionar()">.</button></td>
-                        <td><button class="botao"> % </button></td>
+                        <td><button class="botao" onclick="adicionar('.')">.</button></td>
+                        <td><a href="https://www.linkedin.com/in/saimon-costa/" target="_blank"><button class="botao"><img src="./assets/Linkedin.png" width="32px" height="auto"></button></a></td>
                     </tr>    
                 </table>
                 </div>
